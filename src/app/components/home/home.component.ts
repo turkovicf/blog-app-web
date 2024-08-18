@@ -27,7 +27,7 @@ export class HomeComponent implements OnInit {
 
   getBlogPosts(page: number = 1): void {
     this.blogPostService
-      .getBlogPosts(page)
+      .getVisibleBlogPosts(page)
       .subscribe((response: any) => {
         this.blogPosts = response.blogPosts;
         this.pages = response.page;
