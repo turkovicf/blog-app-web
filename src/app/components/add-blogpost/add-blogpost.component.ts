@@ -54,6 +54,7 @@ export class AddBlogpostComponent implements OnInit {
     }
 
     this.getCategories();
+    this.blogImages$ = this.blogImageService.getBlogImages();
   }
 
   getCategories(): void {
